@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  background-color: rgb(56, 56, 78);
+  text-align: center;
+  padding: 16px;
+}
+
+.signup-title {
+  text-align: center;
+  color: rgb(56, 56, 78);
+  padding: 16px;
+}
+
+h3 {
+  text-align: center;
+  color: #bbb;
+  padding-bottom: 32px;
+  border-bottom: 4px solid rgb(56, 56, 78);
+}
