@@ -26,26 +26,39 @@ body {
 }
 
 h3 {
-  text-align: center;
   color: #bbb;
+}
+
+.latest-news {
+  text-align: center;
   padding-bottom: 32px;
+}
+
+.box-1 {
   border-bottom: 4px solid rgb(56, 56, 78);
+  margin-bottom: 3px;
+}
+
+.box-2 {
+  border-top: 2px solid rgb(56, 56, 78);
+  border-bottom: 2px solid rgb(56, 56, 78);
 }
 
 form {
-  border-top: 2px solid rgb(56, 56, 78);
-  margin-top: 3px;
+  padding-bottom: 32px;
 }
 
 h2 {
-  padding: 32px 0;
+  padding: 16px 0 16px 0;
 }
 
 .label {
   margin: 16px 0px;
 }
 
-input {
+.input,
+select,
+textarea {
   background-color: #bbb;
   border-radius: 5px;
   border: none;
@@ -55,12 +68,17 @@ input {
   box-sizing: border-box;
 }
 
-.zip-code-input {
+.required-inputs {
+  text-align: end;
+}
+
+#zip-code {
   width: 50%;
+  display: block;
 }
 
 button {
-  margin: 32px 0;
+  margin: 0 0 32px 0;
   padding: 24px 0;
   text-align: center;
   color: white;
@@ -79,6 +97,11 @@ p {
   font-weight: 600;
 }
 
+.checks,
+.radio-buttons {
+  margin: 16px 0;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 40%;
@@ -90,7 +113,7 @@ p {
     justify-content: space-between;
   }
 
-  .zip-code-input {
+  #zip-code {
     width: 33%;
   }
 
