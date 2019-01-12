@@ -5,10 +5,11 @@
 
 body {
   padding-bottom: 160px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -37,11 +38,18 @@ h3 {
 .box-1 {
   border-bottom: 4px solid rgb(56, 56, 78);
   margin-bottom: 3px;
+  padding: 16px;
 }
 
 .box-2 {
   border-top: 2px solid rgb(56, 56, 78);
   border-bottom: 2px solid rgb(56, 56, 78);
+  background-color: rgb(81, 179, 146);
+  padding: 16px;
+}
+
+.box-3 {
+  padding: 16px;
 }
 
 form {
@@ -59,7 +67,7 @@ h2 {
 .input,
 select,
 textarea {
-  background-color: #bbb;
+  background-color: rgb(241, 241, 241);
   border-radius: 5px;
   border: none;
   padding: 12px 20px;
@@ -68,13 +76,19 @@ textarea {
   box-sizing: border-box;
 }
 
-.required-inputs {
-  text-align: end;
-}
-
 #zip-code {
   width: 50%;
   display: block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 4px 4px 20px -1px rgb(56, 56, 78);
+  transition-duration: 1s;
+  transition-property: background;
+  background: rgb(56, 56, 78);
+  color: white;
 }
 
 button {

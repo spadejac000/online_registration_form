@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Registration Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 </head>
@@ -21,33 +22,61 @@
         <div class="flex">
           <label class="label" for="full-name">Full Name
           </label>
-          <input class="input required-inputs" type="text" id="full-name" placeholder="Required" required>
+          <input 
+            class="input required-inputs" type="text" 
+            id="full-name" 
+            placeholder="Full Name (Required)" 
+            name="full-name"
+            required>
         </div>
         <div class="flex">
-          <label class="label"  for="email-address">Email Address
+          <label class="label"  for="email">Email Address
           </label>
-          <input class="input required-inputs" type="text" id="email-address" placeholder="Required" required>
+          <input 
+            class="input required-inputs" type="email" 
+            id="email" 
+            placeholder="Email (Required)" 
+            name="email"
+            required>
         </div>
         <div class="flex">
-          <label class="label"  for="phone-number">Phone Number
+          <label class="label"  for="phone">Phone Number
           </label>
-          <input class="input" type="text" id="phone-number">
+          <input 
+            class="input" 
+            type="tel" 
+            id="phone" 
+            placeholder="Phone Number"
+            name="phone">
         </div>
         <div class="flex">
-          <label class="label"  for="street-address">Street Address
+          <label class="label"  for="address">Street Address
           </label>
-          <input class="input" type="text" id="street-address">
+          <input 
+            class="input" 
+            type="text" 
+            id="address" 
+            placeholder="Street Address"
+            name="address">
         </div>
         <div class="flex">
           <label class="label"  for="city">City
           </label>
-          <input class="input" type="text" id="city">
+          <input 
+            class="input" 
+            type="text" 
+            id="city" 
+            placeholder="City"
+            name="city">
         </div>
       
         <div class="flex">
           <label class="label"  for="state">State
           </label>
-          <select name="dropdown" placeholder="Choose State">
+          <select 
+            name="dropdown" 
+            id="state"
+          >
             <option value="" selected>Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -106,37 +135,64 @@
         <div class="flex">
           <label class="label"  for="zip-code">Zip Code
           </label>
-          <input class="input" type="text" id="zip-code" class="zip-code-input">
+          <input class="input" type="text" id="zip-code" placeholder="Zip Code">
         </div>
       </div>
     
-      <h2>Newsletter</h2>
-      <h3>Select the newsletters you would like to recieve</h3>
-      <div class="checks">
-        <input type="checkbox" id="html" name="html">
-        <label for="html">HTML News</label>
+      <div class="box-3">
+        <h2>Newsletter</h2>
+        <h3>Select the newsletters you would like to recieve</h3>
+        <div class="checks">
+          <input 
+            type="checkbox" 
+            id="html-news" 
+            name="newsletter-type"
+            value="html"
+          >
+          <label for="html-news">HTML News</label>
+        </div>
+        <div class="checks">
+          <input 
+            type="checkbox" 
+            id="css-news" 
+            name="newsletter-type"
+            value="css"
+          >
+          <label for="css-news">CSS News</label>
+        </div>
+        <div class="checks">
+          <input 
+            type="checkbox" 
+            id="javascript" 
+            name="newsletter-type"
+            value="javascript"
+          >
+          <label for="javascript">JavaScript News</label>
+        </div>
+        <h3>Newsletter Format</h3>
+        <div class="radio-buttons">
+          <input 
+            type="radio" 
+            id="html" 
+            name="newsletter-format"
+            value="html"
+          >
+          <label for="html">HTML</label>
+        </div>
+        <div class="radio-buttons">
+          <input 
+            type="radio" 
+            id="css" 
+            name="newsletter-format"
+            value="plain"
+          >
+          <label for="css">Plain text</label>
+        </div>
+        <label for="topics">Other topics you'd like to hear about</label>
+        <textarea name="topics" id="topics" cols="30" rows="10" placeholder="What would you like to hear about..?"></textarea>
+        <button type="submit">Sign Up</button>
+        <p>Copyright The Code Review</p>
       </div>
-      <div class="checks">
-        <input type="checkbox" id="css" name="css">
-        <label for="css">CSS News</label>
-      </div>
-      <div class="checks">
-        <input type="checkbox" id="javascript" name="javascript">
-        <label for="javascript">JavaScript News</label>
-      </div>
-      <h3>Newsletter Format</h3>
-      <div class="radio-buttons">
-        <input type="radio" id="html" name="html">
-        <label for="html">HTML</label>
-      </div>
-      <div class="radio-buttons">
-        <input type="radio" id="css" name="css">
-        <label for="css">Plain text</label>
-      </div>
-      <h3>Other topics you'd like to hear about</h3>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <button type="submit">Sign Up</button>
-      <p>Copyright The Code Review</p>
     </form>
   </div>
 </body>
