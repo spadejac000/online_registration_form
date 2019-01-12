@@ -52,6 +52,11 @@ input {
   padding: 12px 20px;
   width: 100%;
   margin: 16px 0;
+  box-sizing: border-box;
+}
+
+.zip-code-input {
+  width: 50%;
 }
 
 button {
@@ -79,13 +84,14 @@ p {
     width: 40%;
   }
 
-  input {
-    width: 70%;
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
   }
 
-  .flex {
-    display: flex;
-    justify-content: space-between;
+  .zip-code-input {
+    width: 33%;
   }
 
   label {
