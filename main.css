@@ -27,12 +27,19 @@ body {
 }
 
 h3 {
-  color: #bbb;
+  color: rgb(241, 241, 241);
 }
 
 .latest-news {
   text-align: center;
   padding-bottom: 32px;
+  color: rgb(56, 56, 78);
+}
+
+.second-line {
+  background-color: rgb(56, 56, 78);
+  height: 2px;
+  border: none;
 }
 
 .box-1 {
@@ -42,14 +49,14 @@ h3 {
 }
 
 .box-2 {
-  border-top: 2px solid rgb(56, 56, 78);
-  border-bottom: 2px solid rgb(56, 56, 78);
   background-color: rgb(81, 179, 146);
   padding: 16px;
+  border-bottom: 2px solid rgb(56, 56, 78);
 }
 
 .box-3 {
   padding: 16px;
+  background-color: #AE4C6D;
 }
 
 form {
@@ -58,6 +65,19 @@ form {
 
 h2 {
   padding: 16px 0 16px 0;
+}
+
+fieldset {
+  margin-top: 32px;
+  border: none;
+}
+
+legend {
+  font-size: 28px;
+  background-color: rgb(56, 56, 78);
+  padding: 4px;
+  color: rgb(241, 241, 241);
+  border-radius: 5px;
 }
 
 .label {
@@ -105,7 +125,7 @@ button {
 }
 
 p {
-  color: rgb(165, 164, 164);
+  color: rgb(241, 241, 241);
   font-style: italic;
   text-align: center;
   font-weight: 600;
